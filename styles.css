@@ -1,0 +1,289 @@
+:root {
+    --primary: #071952e1;
+    --secondary: aqua;
+    --light: white;
+    --dark: black;
+}
+
+.section-title {
+        text-transform: uppercase;
+        background-image: linear-gradient(-225deg,
+                #231557 0%,
+                #44107a 29%,
+                #ff1361 67%,
+                #fff800 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+/******************************************* NAVBAR SECTION******************************* */
+.logo {
+    display: flex;
+}
+
+.navbar-brand{
+    padding-top: 30px;
+}
+
+/******************************************* HERO SECTION******************************* */
+.hero-header {
+    background: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3l4enFpYWdjcTk4ZGo2b3k0eG9ycXg2bTU5eDVkaWd6azE3bnpscyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jOT321Q8nEkjuJpdu0/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.opening-title{
+        text-transform: uppercase;
+        background-image: linear-gradient(-225deg,
+                #231557 0%,
+                #44107a 29%,
+                #ff1361 67%,
+                #fff800 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 30px;
+    }
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+/******************************************* SERVICE SECTION******************************* */
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+.service-item:hover {
+    background-color: var(--primary);
+}
+
+.service-item * {
+    transition: 0.5s;
+}
+
+.service-item:hover * {
+    color: var(--light) !important;
+}
+
+/******************************************* DESTINATION SECTION******************************* */
+.destination img {
+    transition: 0.5s;
+}
+
+.destination a:hover img {
+    transform: scale(1.1);
+}
+
+/******************************************* PACKAGES SECTION******************************* */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .swiper-wrapper {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.swiper-slide {
+    background-position: right;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #ffffff;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+/******************************************* BOOKING SECTION******************************* */
+.booking {
+    background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7)), url(https://www.beaches.com/blog/content/images/2020/05/Beaches-Turks-Caicos-Walk-Beach-Family.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+/******************************************* TESTIMONIAL SECTION******************************* */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.full-boxer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.comment-box:hover {
+    margin-top: 12px;
+    background-color: var(--secondary);
+    transition: 0.5s;
+}
+
+.comment-box {
+    width: 500px;
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.8);
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.name strong {
+    color: black;
+    font-size: 18px;
+}
+
+.name span {
+    color: gray;
+    margin-top: 2px;
+}
+
+/******************************************* FOOTER SECTION******************************* */
+.footer{
+    background: url(data:image/jpeg;base64,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);
+}
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-weight: normal;
+    border: 1px solid #ffffff;
+    border-radius: 35px;
+    transition: 0.3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin: 5px;
+    padding: 0;
+    text-align: left;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: 0.3s;
+
+}
+
+.footer .btn.btn-link ::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(225, 225, 225, .1);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(225, 225, 225, .1);
+}
